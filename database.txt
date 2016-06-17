@@ -1,0 +1,18 @@
+Database Name: animaldb
+Table Name: animal_table
+Column Structure: [id, animal_name, animal_quantity]
+
+Create a table:
+CREATE TABLE animal_table2
+(
+id serial NOT NULL,
+animal_name varchar(25),
+animal_quantity int,
+PRIMARY KEY (id)
+);
+
+Add an animal:
+INSERT INTO animal_table (animal_name, animal_quantity) VALUES ($1, $2)", [req.body.name, randomNumberGen()]
+
+View entire database:
+SELECT * FROM animal_table
